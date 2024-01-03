@@ -21,6 +21,7 @@ $(function () {
 
       create = true;
       }
+  }
   
   // Saves the text next to the save button
   function save(event) {
