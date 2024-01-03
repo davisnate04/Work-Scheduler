@@ -7,8 +7,8 @@ $(function () {
   let create = false;
   let intervalStart;
 
-
   currentDay.innerHTML = day.format('dddd, MMMM D')
+  
   // Creates the element only once
   function createElement() {
       if (!create) {
