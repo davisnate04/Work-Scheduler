@@ -26,13 +26,8 @@ $(function () {
   // Saves the text next to the save button
   function save(event) {
     if (event.target.ariaLabel === "save") {
-      const appt = document.getElementById("appt");
-      const appointment = document.createElement('p');
-
-      appointment.innerHTML = `Appointment Added to <span style="color: #AA336A; font-weight:bold;">localStorage</span> &#10003`;
-      appointment.setAttribute("class", "text-center");
-      appointment.setAttribute("style", "position: relative; top: 75px; font-weight:bold; border-top: 8px solid black");
-      document.body.children[0].appendChild(appointment);
+      
+      createElement();
 
       const hour = {
         "hour": event.target.previousElementSibling.parentElement.id,
